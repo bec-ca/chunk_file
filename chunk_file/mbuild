@@ -1,0 +1,21 @@
+cpp_library:
+  name: chunk_file
+  sources: chunk_file.cpp
+  headers: chunk_file.hpp
+  libs:
+    /bee/binary_format
+    /bee/bytes
+    /bee/data_buffer
+    /bee/file_path
+    /bee/file_reader
+    /bee/file_writer
+    /bee/or_error
+
+cpp_test:
+  name: chunk_file_test
+  sources: chunk_file_test.cpp
+  libs:
+    /bee/testing
+    chunk_file
+  output: chunk_file_test.out
+
